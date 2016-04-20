@@ -22,10 +22,10 @@ redirect_from:
   	<media:keywords>{{ site.keywords }}</media:keywords>
     {% for category in site.podcast.categories %}
       {% if category[1] == empty or category[1] == "" or category[1] == nil %}
-    	   <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">{{category[0]}}</media:category>
+    	   <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">{{ category[0] | xml_escape }}</media:category>
       {% else %}
         {% for subcategory in category[1] %}
-      	   <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">{{category[0]}}/{{subcategory}}</media:category>
+      	   <media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">{{ category[0] | xml_escape }}/{{ subcategory | xml_escape }}</media:category>
         {% endfor %}
       {% endif %}
     {% endfor %}
@@ -48,9 +48,9 @@ redirect_from:
     <itunes:explicit>no</itunes:explicit>
 		<itunes:image href="{{ site.url }}{{ site.squareLogo}}" />
     {% for category in site.podcast.categories %}
-      <itunes:category text="{{ category[0] }}">
+      <itunes:category text="{{ category[0] | xml_escape  }}">
         {% for subcategory in category[1] %}
-          <itunes:category text="{{ subcategory }}" />
+          <itunes:category text="{{ subcategory | xml_escape  }}" />
         {% endfor %}
       </itunes:category>
     {% endfor %}
