@@ -9,7 +9,12 @@ highlighter: rouge
 # so be sure to set them if your theme uses them.
 #
 title : Politely, Up Yours
-tagline: Podcast exploring the depths of philosophy, human social interaction, and how the world works and should work.
+email: dave@raelyard.com
+tagline: A podcast that dives deep on understanding the world in which we live with thoughtful hosts coming from entirely different perspectives.
+description: Politely, Up Yours! with Joe Macaluso and Dave Rael is a podcast seeking to explore the depths of philosophy, politics, society, government, religion, and human interaction.  It also intends to be a shining becacon of virtue and civil interaction.
+keywords: philosophy,politics,society,human interaction,parenting,religion,human,interaction,civil,government,state,society,liberal,libertarian,convervative,talk,polite,courtesy
+squareLogo: /assets/themes/bootstrap-3/images/logo.png
+organizationName: politelyupyours.com
 author :
   name : Joe Macaluso, Dave Rael
   email : dave@raelyard.com
