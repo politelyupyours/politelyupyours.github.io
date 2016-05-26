@@ -1,5 +1,5 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.1"
-gem "jekyll-sitemap"
-gem "pygments.rb"
+gem 'github-pages'
+gem 'jekyll-redirect-from'
+gem 'nokogiri', '>=1.6.8.rc3'
